@@ -23,6 +23,28 @@ namespace linq_exercises
 			{
 				Console.WriteLine($"{fruit}");
 			}
+
+			// 2. Which of the following numbers are multiples of 4 or 6
+			// Which of the following numbers are multiples of 4 or 6
+			List<int> numbers = new List<int>()
+			{
+					15, 8, 21, 24, 32, 13, 30, 12, 7, 54, 48, 4, 49, 96
+			};
+			/*
+				The remainder operator '%' computes the remainder after dividing its first operand //
+				by its second operand.
+
+				For the integer operands:
+					The result of a % b, is the value produced by a - (a / b) * b
+			*/
+			IEnumerable<int> fourSixMultiples = numbers.Where(number => number % 4 == 0 && number % 6 == 0);
+
+			// I wanna run this foreach on fourSixMultiples...for each number contained within
+			// Output is 24, 12, 48, 96
+			foreach(int number in fourSixMultiples)
+			{
+				Console.WriteLine($"{number}");
+			}
 		}
 	}
 }
