@@ -23,6 +23,7 @@ namespace linq_exercises
 			{
 				Console.WriteLine($"{fruit}");
 			}
+			Console.WriteLine(); // Blank line.
 
 			// 2. Which of the following numbers are multiples of 4 or 6
 			// Which of the following numbers are multiples of 4 or 6
@@ -45,6 +46,26 @@ namespace linq_exercises
 			{
 				Console.WriteLine($"{number}");
 			}
+			Console.WriteLine(); // Blank line.
+
+			// 3. Order these student names alphabetically, in descending order (Z to A)
+			List<string> names = new List<string>()
+			{
+					"Heather", "James", "Xavier", "Michelle", "Brian", "Nina",
+					"Kathleen", "Sophia", "Amir", "Douglas", "Zarley", "Beatrice",
+					"Theodora", "William", "Svetlana", "Charisse", "Yolanda",
+					"Gregorio", "Jean-Paul", "Evangelina", "Viktor", "Jacqueline",
+					"Francisco", "Tre"
+			};
+			IEnumerable<string> descend = from name in names
+				orderby name descending
+				select name;
+
+			foreach (string name in descend) {
+				Console.WriteLine($"{name}");
+			}
+
+
 		}
 	}
 }
