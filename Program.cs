@@ -66,7 +66,7 @@ namespace linq_exercises
 			}
 			Console.WriteLine(); // Blank line.
 
-			// Build a collection of these numbers sorted in ascending order
+			// 4. Build a collection of these numbers sorted in ascending order
 			List<int> numbersList = new List<int>()
 			{
 					15, 8, 21, 24, 32, 13, 30, 12, 7, 54, 48, 4, 49, 96
@@ -78,6 +78,18 @@ namespace linq_exercises
 			foreach (var number in ascend) {
 				Console.WriteLine(number);
 			}
+			Console.WriteLine(); // Blank line.
+
+			// 5. Output how many numbers are in this list
+			List<int> numbersCount = new List<int>()
+			{
+					15, 8, 21, 24, 32, 13, 30, 12, 7, 54, 48, 4, 49, 96
+			};
+			/*
+			I was originally attempting to use Count() - including the
+			parentheses, but that was not working
+			*/
+			Console.WriteLine($"There are {numbersCount.Count} items in this list.");
 		}
 	}
 }
