@@ -87,9 +87,30 @@ namespace linq_exercises
 			};
 			/*
 			I was originally attempting to use Count() - including the
-			parentheses, but that was not working
+			parentheses, but that was not working.
 			*/
 			Console.WriteLine($"There are {numbersCount.Count} items in this list.");
+			Console.WriteLine(); // Blank line.
+
+			// 6. How much money have we made?
+			List<double> purchases = new List<double>()
+			{
+					2340.29, 745.31, 21.76, 34.03, 4786.45, 879.45, 9442.85, 2454.63, 45.65
+			};
+
+			Console.WriteLine($"The total amount is ${purchases.Sum()}.");
+			Console.WriteLine(); // Blank line.
+
+			// 7. What is our most expensive product?
+			List<double> prices = new List<double>()
+			{
+					879.45, 9442.85, 2454.63, 45.65, 2340.29, 34.03, 4786.45, 745.31, 21.76
+			};
+
+			Console.WriteLine($"The highest price in the list is ${purchases.Max()}.");
+			Console.WriteLine(); // Blank line.
 		}
+
+
 	}
 }
