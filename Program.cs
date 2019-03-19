@@ -64,8 +64,20 @@ namespace linq_exercises
 			foreach (string name in descend) {
 				Console.WriteLine($"{name}");
 			}
+			Console.WriteLine(); // Blank line.
 
+			// Build a collection of these numbers sorted in ascending order
+			List<int> numbersList = new List<int>()
+			{
+					15, 8, 21, 24, 32, 13, 30, 12, 7, 54, 48, 4, 49, 96
+			};
+			var ascend = from number in numbersList
+				orderby number ascending
+				select number;
 
+			foreach (var number in ascend) {
+				Console.WriteLine(number);
+			}
 		}
 	}
 }
