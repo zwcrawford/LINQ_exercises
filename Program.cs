@@ -98,7 +98,7 @@ namespace linq_exercises
 					2340.29, 745.31, 21.76, 34.03, 4786.45, 879.45, 9442.85, 2454.63, 45.65
 			};
 
-			Console.WriteLine($"The total amount is ${purchases.Sum()}.");
+			Console.WriteLine($"The total amount is {purchases.Sum()}.");
 			Console.WriteLine(); // Blank line.
 
 			// 7. What is our most expensive product?
@@ -109,8 +109,25 @@ namespace linq_exercises
 
 			Console.WriteLine($"The highest price in the list is ${purchases.Max()}.");
 			Console.WriteLine(); // Blank line.
+
+
+			// 8. Store each number in the following List until a perfect square is detected
+			// Ref: https://msdn.microsoft.com/en-us/library/system.math.sqrt(v=vs.110).aspx
+
+			List<int> whatsSquare = new List<int>()
+			{
+				66, 12, 8, 27, 82, 34, 7, 50, 19, 46, 81, 23, 30, 4, 68, 14
+			};
+			// Keep putting the numbers here until a square number is reached
+			IEnumerable<int> nonSquare = whatsSquare.TakeWhile(number => ((Math.Round(Math.Sqrt(number)) * Math.Round(Math.Sqrt(number)) != number)));
+
+			// The following prints to 46 and stops at 81, the first square number in the whatsSquare list
+			foreach (int number in nonSquare) {
+				Console.WriteLine(number);
+			}
+			Console.WriteLine(); // Blank line.
 		}
-
-
 	}
 }
+
+
