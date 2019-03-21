@@ -1,1 +1,1 @@
-# LINQ_exercises
+# LINQ_exercises, .NET Core command line project

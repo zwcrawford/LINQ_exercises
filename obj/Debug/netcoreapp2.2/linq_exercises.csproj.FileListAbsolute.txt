@@ -1,0 +1,11 @@
+/Users/zac_crawford/workspace/csharp/linq_exercises/bin/Debug/netcoreapp2.2/linq_exercises.deps.json
+/Users/zac_crawford/workspace/csharp/linq_exercises/bin/Debug/netcoreapp2.2/linq_exercises.runtimeconfig.json
+/Users/zac_crawford/workspace/csharp/linq_exercises/bin/Debug/netcoreapp2.2/linq_exercises.runtimeconfig.dev.json
+/Users/zac_crawford/workspace/csharp/linq_exercises/bin/Debug/netcoreapp2.2/linq_exercises.dll
+/Users/zac_crawford/workspace/csharp/linq_exercises/bin/Debug/netcoreapp2.2/linq_exercises.pdb
+/Users/zac_crawford/workspace/csharp/linq_exercises/obj/Debug/netcoreapp2.2/linq_exercises.csprojAssemblyReference.cache
+/Users/zac_crawford/workspace/csharp/linq_exercises/obj/Debug/netcoreapp2.2/linq_exercises.csproj.CoreCompileInputs.cache
+/Users/zac_crawford/workspace/csharp/linq_exercises/obj/Debug/netcoreapp2.2/linq_exercises.AssemblyInfoInputs.cache
+/Users/zac_crawford/workspace/csharp/linq_exercises/obj/Debug/netcoreapp2.2/linq_exercises.AssemblyInfo.cs
+/Users/zac_crawford/workspace/csharp/linq_exercises/obj/Debug/netcoreapp2.2/linq_exercises.dll
+/Users/zac_crawford/workspace/csharp/linq_exercises/obj/Debug/netcoreapp2.2/linq_exercises.pdb
